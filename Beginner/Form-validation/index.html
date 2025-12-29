@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Student Registration Form</h2>
+      </div>
+      <form action="" id="regForm">
+        <div class="section1">
+          <div class="group1">
+            <div class="form-group">
+              <label for="">Student Name:</label>
+              <input type="text" id="student" />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="">Father's Name:</label>
+              <input type="text" id="father" />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="">Date of birth:</label>
+              <input type="date" name="" id="dob" />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="">Gender:</label>
+              <div class="inline">
+                <input type="radio" name="gender" value="Male" />Male
+                <input type="radio" name="gender" value="Female" />Female
+                <input type="radio" name="gender" value="Other" />Other
+              </div>
+              <small id="genderError" class="error"></small>
+            </div>
+          </div>
+          <div class="group2">
+            <div class="form-group">
+              <label for="">Mobile no:</label>
+              <input type="text" id="mobileNum" />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="">Email id:</label>
+              <input type="email" id="email" />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="">Password:</label>
+              <input type="password" id="password" />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="">Student Photo:</label>
+
+              <input type="file" id="photo" accept=".jpg,.jpeg,.png" />
+              <small class="error"></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Department:</label>
+          <div class="inline">
+            <input type="checkbox" value="CSE" />CSE
+            <input type="checkbox" value="ECE" />ECE
+            <input type="checkbox" value="Civil" />Civil
+            <input type="checkbox" value="Mech" />Mech
+            <input type="checkbox" value="Other" />Other
+          </div>
+          <small id="deptError" class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="">Course:</label>
+          <select name="" id="course">
+            <option value="">Select Course</option>
+            <option value="">B.Tech</option>
+            <option value="">MCA</option>
+            <option value="">BCA</option>
+            <option value="">M.Tech</option>
+            <option value="other">Other</option>
+          </select>
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="">City:</label>
+          <input type="text" id="city" />
+          <small class="error"></small>
+        </div>
+        <div class="form-group">
+          <label for="">Address:</label>
+          <textarea name="" id="address"></textarea>
+          <small class="error"></small>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
