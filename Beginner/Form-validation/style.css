@@ -14,21 +14,23 @@ body {
 }
 .section1 {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
 }
-.group1 {
-  width: 15rem;
-}
+
+.group1,
 .group2 {
-  width: 15rem;
+  width: 100%;
 }
 
 .container {
-  height: 44rem;
-  width: 35rem;
+  min-height: auto;
+  width: 100%;
+  max-width: 35rem;
+  min-width: 280px;
   background-color: rgba(255, 255, 255, 0.04);
   box-shadow: 0 25px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
+  overflow-y: auto;
 
   &:hover {
     box-shadow: 0 0 25px rgba(25, 175, 217, 0.35),
@@ -39,19 +41,19 @@ body {
   text-align: center;
   display: grid;
   place-items: center;
-  height: 3rem;
+  height: 2.5rem;
   color: #fff;
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 }
 #regForm {
-  padding: 18px;
+  padding: 15px;
 }
 label {
   color: rgb(58, 56, 56);
-  margin-top: 5px;
+  margin-top: 3px;
   display: block;
-  margin-bottom: 5px;
-  font-size: 16px;
+  margin-bottom: 4px;
+  font-size: 15px;
 }
 input,
 select,
@@ -78,7 +80,7 @@ button {
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
   width: 100%;
   color: #fff;
-  padding: 5px;
+  padding: 7px;
   font-size: 16px;
   cursor: pointer;
   border: 2px solid rgb(101, 182, 232);
@@ -96,9 +98,16 @@ button {
   color: red;
   display: block;
 }
-@media (max-width: 430px) {
+/*
+Tablet and mobile Responsive 
+*/
+@media (max-width: 768px) {
+  .container {
+    overflow-y: auto;
+    min-height: 100vh;
+    max-width: 100%;
+  }
   .section1 {
-    display: flex;
     flex-direction: column;
   }
 }

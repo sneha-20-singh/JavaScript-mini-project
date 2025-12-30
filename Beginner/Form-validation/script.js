@@ -39,7 +39,7 @@ const validate = () => {
   }
   //Father Name
   if (father.value.trim() === "") {
-    showError(student, "This field is required");
+    showError(father, "This field is required");
     valid = false;
   } else if (!nameRegex.test(father.value.trim())) {
     showError(father, "Only alphabets allowed");
