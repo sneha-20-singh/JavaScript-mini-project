@@ -40,6 +40,20 @@ body {
 .display .display-input::placeholder {
   color: #fff;
 }
+.display.active .display-input {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-65%);
+  -webkit-transform: translateY(-65%);
+  -moz-transform: translateY(-65%);
+  -ms-transform: translateY(-65%);
+  -o-transform: translateY(-65%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
 
 .display .display-result {
   position: absolute;
@@ -50,6 +64,20 @@ body {
   -moz-transform: translateY(65%);
   -ms-transform: translateY(65%);
   -o-transform: translateY(65%);
+}
+
+.display.active .display-result {
+  font-size: 35px;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .buttons {
@@ -72,9 +100,13 @@ body {
   box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.1),
     3px 3px 15px rgba(0, 0, 0, 0.6);
 }
+.buttons button:hover {
+  background: #13171b;
+}
+
 .buttons .operator {
   position: relative;
-  color: rgba(7, 236, 80, 0.634);
+  color: #00e5ff;
 }
 .buttons .operator span {
   position: absolute;
