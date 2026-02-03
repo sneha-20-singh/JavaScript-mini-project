@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mygallery">
+      <h1>My Gallery</h1>
+      <p>Click on the images below:</p>
+    </div>
+    <div class="main">
+      <div class="column">
+        <img
+          src="src/pexels-daniyal-gh-10741-110812.jpg"
+          alt="Bird"
+          style="width: 100%"
+          onclick="myFunction(this)"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="src/pexels-erik-karits-2093459-18641205 (1).jpg"
+          alt="Butterfly"
+          style="width: 100%"
+          onclick="myFunction(this)"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="src/pexels-miroslav-glasa-2147620119-29678804.jpg"
+          alt="Sunset"
+          style="width: 100%"
+          onclick="myFunction(this)"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="src/pexels-yide-sun-84747826-19446467.jpg"
+          alt="Leaf"
+          style="width: 100%"
+          onclick="myFunction(this)"
+        />
+      </div>
+    </div>
+    <div class="container">
+      <span onclick="this.parentElement.style.display = 'none'" class="closebtn"
+        >&times;</span
+      >
+      <img src="" alt="" id="expandedImg" style="width: 100%" />
+      <div id="imgText"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

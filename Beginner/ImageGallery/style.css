@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mygallery {
+  font-size: 30px;
+  font-family: cursive;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.column img {
+  opacity: 0.8;
+}
+.column img:hover {
+  opacity: 1;
+}
+
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgText {
+  position: relative;
+  bottom: 30px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
